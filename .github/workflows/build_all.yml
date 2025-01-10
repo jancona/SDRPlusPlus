@@ -156,6 +156,8 @@ jobs:
 
     build_macos_arm:
         runs-on: macos-14
+        env:
+          CPATH: /opt/homebrew/include:$CPATH
 
         steps:
         - uses: actions/checkout@v4
